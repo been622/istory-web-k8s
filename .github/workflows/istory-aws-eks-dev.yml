@@ -107,6 +107,7 @@ jobs:
           ref: main # 바꾸기
           path: .
           token: ${{ secrets.GIT_PAT }}
+          persist-credentials: false
       - name: Install kubectl
         run: |
           curl -LO "https://dl.k8s.io/release/$(curl -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"

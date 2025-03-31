@@ -1,10 +1,1 @@
-gh api -X PUT repos/been622/istory-web-k8s/environments/k8s-dev  --silent
-gh secret set DATABASE_URL --env k8s-dev --body "jdbc:mysql:istory-db-lb.istory-dev:3306/istory"
-gh secret set MYSQL_DATABASE --env k8s-dev --body "istory"
-gh secret set MYSQL_USER --env k8s-dev --body "user"
-gh secret set MYSQL_PASSWORD --env k8s-dev --body "user12345"
-gh secret set MYSQL_ROOT_PASSWORD --env k8s-dev --body "admin123"
-gh secret set DOCKER_USERNAME --env k8s-dev --body "jsb622"
-gh secret set DOCKER_TOKEN --env k8s-dev --body "dckr_pat_U6OnAylQHBm8eUrfxtlbFl8A_Kk"
-gh secret set DOCKER_PASSWORD --env k8s-dev --body "sb1346!!"
-gh secret set GIT_PAT --env k8s-dev --body "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"
+
